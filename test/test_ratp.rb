@@ -1,7 +1,8 @@
 require 'helper'
 
 class TestRatp < Test::Unit::TestCase
-  should "probably rename this file and start testing for real" do
-    flunk "hey buddy, you should probably rename this file and start testing for real"
+  should "fetch a path from Alesia to Chatelet" do
+    @path = Ratp::Client.fetch("Alesia" => "Chatelet")
+    assert @path
   end
 end
