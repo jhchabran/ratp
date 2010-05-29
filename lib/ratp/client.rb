@@ -16,7 +16,7 @@ module Ratp
       @transport_method = opts[:transport_method] || :any
     end
     
-    def fetch
+    def fetch_results_page
       @browser.goto @url
       @frame = @browser.frame "ratp"
       @frame = @frame.frames.first # grab search frame
@@ -29,7 +29,7 @@ module Ratp
       
       submit_link = @frame.p(:class, "searchItineraire").links.first
       
-      @result_browser = submit_link.click_and_attach
+      submit_link.click_and_attach
     end
     
     def extract_path_and_types opts

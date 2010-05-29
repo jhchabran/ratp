@@ -1,0 +1,452 @@
+
+
+		
+
+
+
+		<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ 
+
+
+
+  <script language='javascript' src='/Pivi/js/moteur.js'></script>
+  <link rel="stylesheet" media="screen" type="text/css" href="/css/piviweb/style_screen.css" />
+  <link rel="stylesheet" media="print" type="text/css" href="/css/piviweb/style_print.css" />
+	<title>RATP, Feuille de route</title>
+<meta name="description" content="RATP.fr permet la recherche d itin�raires en Ile de France, plan ( M�tro, Tramway, RER, Bus ) en ligne, vous propose les informations du r�seau RATP et des transports de Paris">
+<meta name="keywords" content="itin�raires Ile de France, plan M�tro, RER, Bus, Tramway, transports Paris, r�seau RATP, bus touristiques, trafic routier, carte orange, transports en commun">
+<script language="JavaScript" type="text/javascript">
+<!--
+	// Fermeture de la page ouvrante
+	close_previous_window();
+//-->
+</script>
+  </head>
+  <body class="BodyPiviResult body_route" >
+	<!-- D�but projet ePub -->
+			<link href="/css/navigation.css" rel="stylesheet" type="text/css">
+		<div style="padding: 5px;"></div>
+		<!-- Mega banner - Begin -->
+		<div id="popup_mega_banner_box">
+			<div class="content_pivi">
+			
+			</div>
+		</div>	
+	<!-- Fin projet ePub -->
+	<!-- D�but Logo nouvelle charte -->
+	<link href="/css/popup_pub_proxi_pivi.css" rel="stylesheet" type="text/css">
+<div id="haut_reseau">
+	<div id="haut_reseau_bandeau">&nbsp;</div>
+	<div class="logo_haut_reseau"><a href="../index.php" target="_top"><img src="/css/img/haut_popup_logo_ratp_gm.gif" alt="Retour � la page d'accueil du site ratp.fr " width="286" height="42" border="0"></a>
+
+</div>
+</div>	<!-- Fin Logo nouvelle charte -->
+    <div class="content_route">
+	<!-- D�but promo �v�nementiel. ex : nuit blanche  -->
+	   <link href="/francilien.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="/css/piviweb/inc_pub_pivi_feuille_route.css">
+
+<!-- Fichier de pub mis en haut des pages de saisie (index.tpl) et Feuille de Route (itin-std.tpl, itin-perturbe.tpl et itin-conseille.tpl) 
+des profils  RATP et RATP_HOME de notre site. -->
+<!-- Cr�� par OH et PC : fichier en php int�gr� en include php dans les pages tpl -->
+<!-- Lorsqu'il est vide, on met juste un tableau avec un &nbsp; -->
+
+<script language="JavaScript" type="text/JavaScript">
+function MM_openBrWindow(theURL,winName,features) { 
+  window.open(theURL,winName,features);
+}
+
+function xt_clic(page,url,nvlle)
+{
+hsh = new Date();
+hsd = document;
+xt_img = new Image();
+// ajout vlad correction si dans frame
+if (top.location != self.document.location) 
+ref=frames.document.referrer.replace(/&/g, '$'); 
+else ref=parent.document.referrer.replace(/&/g, '$');
+//
+hsi = 'http://logc5.xiti.com/hit.xiti?s=63390';
+hsi += '&p='+page+'&clic=S&hl=' + hsh.getHours() + 'x' + hsh.getMinutes() + 'x' + hsh.getSeconds();
+if(parseFloat(navigator.appVersion)>=4)
+{Xiti_s=screen;hsi += '&r=' + Xiti_s.width + 'x' + Xiti_s.height + 'x' + Xiti_s.pixelDepth + 'x' + Xiti_s.colorDepth;}
+hsi += '&ref=' + ref;
+xt_img.src = hsi;
+if (url != null)
+{ if ((nvlle=='')||(nvlle==null)) { hsd.location = url;} else {xfen = window.open(url,'xfen',''); xfen.focus();}}
+else
+{return;}
+}
+</script>
+
+<!-- Lorsqu'on a besoin de vider le fichier pour le rendre invisible dans les pages de PIVI -->	<!-- promo �v�nementiel. ex : nuit blanche  -->
+       <!--bloc superieur-->
+        <div class="onglet">
+          <div class="imprim"><a href="#" onclick="javascript:window.print();" class="print">Imprimer</a>
+        <a href="mailto:?subject=Trajet Alesia - Metro BALARD - Metro-Tram&body=%0D%0ACher(e) internaute,%0D%0A%0D%0APour votre trajet Alesia - Metro BALARD - Metro-Tram, la RATP vous propose la solution suivante.%0D%0A%0D%0A%20Pour la visualiser, cliquez sur le lien ci-dessous ou recopiez-le dans votre navigateur : %0D%0A%0D%0A%20http%3A%2F%2Fwww32.ratp.info%2FPivi%2Fpiviweb.php%3Fexec%3Dpiviweb%26cmd%3DItineraire%26Profil%3DRATP_HOME%26nom_dep%3DAlesia%2B-%2BMetro%26type_dep%3DARRET%26x_dep%3D599283%26y_dep%3D2425558%26nom_arr%3DBALARD%2B-%2BMetro-Tram%26type_arr%3DARRET%26x_arr%3D595719%26y_arr%3D2426431%26mode%3DTOUS_MODE%26critere%3DPLUS_RAPIDE%26jour%3D24%26mois%3D05%26annee%3D2010%26heure%3D11%26minute%3D40%26typeDate%3DDATE_DEPART%20%0D%0A%0D%0ARetrouvez nos autres services horaires, plans de lignes, plans de quartier, tarif et Information trafic sur http://www.ratp.fr.%0D%0A%0D%0A Merci de voyager sur nos lignes !" class="send">Envoyer</a> 
+		  <img src="/picts/moteur/piviweb/spacer.gif" width="1" height="1" alt="" /></div>
+          <a href="/communiquer/faq.php?aide=aide_itineraire" class="aide" target="_blank">Aide</a>
+		   <a href="/communiquer/faq.php?aide=faq_itineraire" class="faq" target="_blank">FAQ</a>
+		   <a href="javascript:openCenterUrl('/communiquer/contact/remarques.php?rub=pivi&aide=2&f=resultat&profil=RATP_HOME&nom_dep=Alesia&type_dep=ARRET&x_dep=599283&y_dep=2425558&nom_arr=Balard&type_arr=ARRET&x_arr=595719&y_arr=2426431&mode=TOUS_MODE&critere=PLUS_RAPIDE&jour=24&mois=05&annee=2010&heure=11&minute=40&typeDate=DATE_DEPART','REMARQUES',350,430);" class="mail">Nous �crire</a>
+		   <img src="/picts/moteur/piviweb/spacer.gif" width="1" height="1" alt="" class="spacer" />
+        </div>
+		   <img src="/picts/moteur/piviweb/spacer.gif" width="1" height="1" alt="" class="spacer" />
+		<div class="bloc_top">	
+        
+    <h1> <strong>Feuille de route</strong><span>Itin�raires en transport en commun</span> <img src="/picts/moteur/piviweb/spacer.gif" width="1" height="1" alt="" class="spacer" /> 
+    </h1>
+        <div class="ligne_1">
+          Le plus rapide. Tous modes.
+        </div>
+       <div class="ligne_2"> 
+      <p> <span><strong>D�part :</strong> Alesia - Metro</span>
+<a target="_blank" href="http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=ListeFavoris&Profil=RATP_HOME&Type=Depart" onclick="javascript:openCenterUrl(('http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=ListeFavoris&Profil=RATP_HOME&Type=Depart'),'DEPART',470,420);return false;">M�moriser mon d�part</a> 
+<!-- modif code vlad-->
+<img src="/picts/moteur/piviweb/spacer.gif" width="1" height="1" alt="" class="spacer" />		
+      </p>
+      <p> <span><strong>Arriv�e :</strong> BALARD - Metro-Tram</span>
+<a target="_blank" href="http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=ListeFavoris&Profil=RATP_HOME&Type=Arrivee" onclick="openCenterUrl(('http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=ListeFavoris&Profil=RATP_HOME&Type=Arrivee'),'ARRIVEE',470,420);return false;">M�moriser mon arriv�e</a> 
+		<img src="/picts/moteur/piviweb/spacer.gif" width="1" height="1" alt="" class="spacer" /> 
+      </p>
+			 <img src="/picts/moteur/piviweb/spacer.gif" width="1" height="1" alt="" class="spacer" />
+        </div>
+    <div class="ligne_3"> 
+      <p class="pdate">Date : &nbsp;24/05/2010</p>
+      <p class="pdepart"><img src="/picts/moteur/piviweb/picto_heure.gif" width="20" height="20" alt="" /> 
+        <span>*D�part � 11h41</span></p>
+      <p class="parrive">Arriv�e � : <span>12h09</span></p>
+      <p class="pparcours">Temps de parcours : <span>28 mn</span></p>
+			 <img src="/picts/moteur/piviweb/spacer.gif" width="1" height="1" alt="" class="spacer" />
+        </div>
+	  </div>
+<p>
+	<!-- comparateur modal debut -->
+<!-- depart -->
+
+<div id="comparateur"><div id="planete"><img src="http://www.ratp.info/picts/v_pivi/pi_imag/planete.gif" alt="" /></div><div id="texte_comparateur"><div id="titre_comparateur"><span style="font-size:11px; font-weight:bold;">Les &eacute;missions de CO</span><span class="petit2">2</span> <span style="font-size:11px">pour cet itin&eacute;raire sont estim&eacute;es &agrave; :</span></div><div id="resultats">
+        	<span style="font-size:11px; font-weight:bold;">Transports en commun : </span><span class="chiffre_tc">364 <span class="texte_eco">g CO</span><span class="petit2">2</span></span>
+			<span style="font-size:11px">Voiture : </span><span class="chiffre_vp">855 <span class="texte_eco">g CO</span><span class="petit2">2</span></span></span></div></div><div id="methode">
+    		<div id="lien_methode"><a href="/orienter/en_savoir_plus_eco_deplacements.php" target="_blank" title="M&eacute;thode de calcul des �missions de CO2 (Nouvelle fenetre)">M&eacute;thode<br /> de calcul</a></div></div></div> </p>
+		 <div>
+		 <div class="ligne_bts"><a href="http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=HorairePrecedent&Profil=RATP_HOME" class="horaire">Horaire pr�c�dent</a></div>
+		 <div class="ligne_bts">
+		 <a href="http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=HoraireSuivant&Profil=RATP_HOME" class="space">Horaire suivant</a></div>
+		 <div class="ligne_bts">
+		 <a href="http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=TrajetRetour&Profil=RATP_HOME" class="space" onclick="trajetRetour('http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=TrajetRetour&Profil=RATP_HOME');return false;">Trajet retour</a></div>
+		 <div class="ligne_bts">
+		 <a href="http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=ModifierRecherche&Profil=RATP_HOME" class="space" onclick="modifierRecherchePivi('http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=ModifierRecherche&Profil=RATP_HOME');return false;">Modifier recherche</a>
+		 <img src="/picts/moteur/piviweb/spacer.gif" width="1" height="1" alt="" class="spacer" />
+        </div>
+		</div>
+		<div class="questionaire">
+		</div>
+      <!--bloc central-->
+	 <div class="t_data1">
+        <table cellpadding="0" cellspacing="0" summary="R&eacute;sultat de l'itin&eacute;raire" class="t_data">
+          <tr>
+            <th class="th_1"></th>
+            <th class="th_2"></th>
+            <th class="th_3"></th>
+            <th class="th_4">Heure</th>
+            <th class="th_5">Dur�e</th>
+            <th class="th_6">Plan</th>
+          </tr>
+          <tr>
+            <td class="td_1"></td>
+            <td class="td_2">
+              <img src="/picts/moteur/piviweb/picto_marche.gif" width="20" height="20" alt="" /><br />
+            </td>
+            <td class="td_3"> <strong>Allez jusqu'� :</strong> ALESIA-GENERAL LECLERC 
+        - Bus RATP</td>
+            <td class="td_4"></td>
+            <td class="td_5">
+              1 mn
+            </td>
+            <td class="td_6">
+              <!-- Ancien lien proxi
+<a target="_blank"  href="/Proxi/proxi.php?lang=FRA&tmpl=PIVIWEB&x=599350&y=2425505&nom_station=ALESIA-GENERAL LECLERC"><img src="/picts/moteur/piviweb/picto_plan.gif" width="22" height="22" alt="Plan de Quartier" /></a><br />
+-->
+<a target="_blank" href='http://www32.ratp.info/Pivi/proxi.php?exec=proxi&cmd=Plan&Profil=RATP_HOME&x=599350&y=2425505&nom=ALESIA-GENERAL LECLERC&Profil=PIVIWEB&type=ARRET' onclick='javascript:openCenterUrl("http://www32.ratp.info/Pivi/proxi.php?exec=proxi&cmd=Plan&Profil=RATP_HOME&x=599350&y=2425505&nom=ALESIA-GENERAL LECLERC&Profil=PIVIWEB&type=ARRET","Plan Proxi", 811,811);return false;'><img src="/picts/moteur/piviweb/picto_plan.gif" width="22" height="22" alt="Plan de Quartier" /></a><br />
+           </td>
+          </tr>          <tr>
+           <td class="td_etape"> <span>1</span> </td>
+            <td class="td_7">
+              <img src="/picts/moteur/reseau/bus_ratp.png" title="Bus RATP" alt=""/></td>
+            <td class="td_7">
+             <p class="ptd_7"><strong>Direction :</strong> PORTE DE SAINT CLOUD</p>
+            </td>
+            <td class="td_7"></td>
+            <td class="td_7"></td>
+            <td class="td_8"></td>
+          </tr>
+          <tr>
+            
+      <td class="td_9">&nbsp;</td>
+            <td class="td_7">      		<img src="/picts/moteur/ligne/b62.gif" alt="62 (PORTE DE SAINT CLOUD / BIBLIOTHEQUE FRANCOIS MITTERRAND)" title="62 (PORTE DE SAINT CLOUD / BIBLIOTHEQUE FRANCOIS MITTERRAND)" />
+  
+           </td>
+            <td class="td_7">
+              <p class="ptd_7">
+                <strong>de :</strong> ALESIA-GENERAL LECLERC
+              </p>
+              <p class="ptd_8">
+                <strong>� :</strong> CONVENTION-LECOURBE
+              </p>
+            </td>
+            <td class="td_7">
+              <p>
+                11h42
+              </p>
+              <p>
+                11h56
+              </p>
+            </td>
+            <td class="td_7">
+              <p class="ptd_5">14 mn</p>
+            </td>
+            <td class="td_8"></td>
+          </tr>  <tr>
+      <td class="td_10">&nbsp;</td>
+   <td class="td_2">
+              <img src="/picts/moteur/piviweb/picto_marche.gif" width="20" height="20" alt="" /><br />
+        </td>
+      <td class="td_3"> <strong> Correspondance � :</strong> CONVENTION-LECOURBE - Bus RATP</td>
+            <td class="td_4"></td>
+    <td class="td_5"> 1 mn </td>
+			<td class="td_6">
+            							<!-- Ancien lien proxi
+			<a target="_blank"  href="/Proxi/proxi.php?lang=FRA&tmpl=PIVIWEB&x=596688&y=2426754&nom_station=CONVENTION-LECOURBE"><img src="/picts/moteur/piviweb/picto_plan.gif" width="22" height="22" alt="Plan de Quartier" /></a><br />
+			-->
+		<a href='http://www32.ratp.info/Pivi/proxi.php?exec=proxi&cmd=Plan&Profil=RATP_HOME&x=596688&y=2426754&nom=CONVENTION-LECOURBE&Profil=PIVIWEB&type=ARRET' onclick='javascript:openCenterUrl("http://www32.ratp.info/Pivi/proxi.php?exec=proxi&cmd=Plan&Profil=RATP_HOME&x=596688&y=2426754&nom=CONVENTION-LECOURBE&Profil=PIVIWEB&type=ARRET","Plan Proxi", 811,811);return false;'><img src="/picts/moteur/piviweb/picto_plan.gif" width="22" height="22" alt="Plan de Quartier" /></a><br />
+				
+		            </td>
+          </tr>
+          <tr>
+           <td class="td_etape"> <span>2</span> </td>
+            <td class="td_7">
+              <img src="/picts/moteur/reseau/bus_ratp.png" title="Bus RATP" alt=""/></td>
+            <td class="td_7">
+             <p class="ptd_7"><strong>Direction :</strong> FRERES VOISIN</p>
+            </td>
+            <td class="td_7"></td>
+            <td class="td_7"></td>
+            <td class="td_8"></td>
+          </tr>
+          <tr>
+            
+      <td class="td_9">&nbsp;</td>
+            <td class="td_7">      		<img src="/picts/moteur/ligne/b39.gif" alt="39 (FRERES VOISIN / GARE DU NORD)" title="39 (FRERES VOISIN / GARE DU NORD)" />
+  
+           </td>
+            <td class="td_7">
+              <p class="ptd_7">
+                <strong>de :</strong> CONVENTION-LECOURBE
+              </p>
+              <p class="ptd_8">
+                <strong>� :</strong> BALARD
+              </p>
+            </td>
+            <td class="td_7">
+              <p>
+                12h04
+              </p>
+              <p>
+                12h09
+              </p>
+            </td>
+            <td class="td_7">
+              <p class="ptd_5">5 mn</p>
+            </td>
+            <td class="td_8"></td>
+          </tr><tr>
+ <td class="td_1"></td>
+ <td class="td_2"><img src="/picts/moteur/piviweb/picto_marche.gif" width="20" height="20" alt="" /><br /></td>
+ <td class="td_3"> <strong>Allez jusqu'� :</strong> BALARD - Metro-Tram</td>
+ <td class="td_4"></td>
+ <td class="td_5">0 mn</td>
+ <td class="td_6">
+	<!-- Ancien lien Proxi 
+		<a target="_blank"  href="/Proxi/proxi.php?lang=FRA&tmpl=PIVIWEB&x=595719&y=2426431&nom_station=BALARD - Metro-Tram">
+    -->
+	<a target="_blank" href='http://www32.ratp.info/Pivi/proxi.php?exec=proxi&cmd=Plan&Profil=RATP_HOME&x=595719&y=2426431&nom=BALARD - Metro-Tram&Profil=PIVIWEB&type=ARRET' onclick='javascript:openCenterUrl("http://www32.ratp.info/Pivi/proxi.php?exec=proxi&cmd=Plan&Profil=RATP_HOME&x=595719&y=2426431&nom=BALARD - Metro-Tram&Profil=PIVIWEB&type=ARRET","Plan Proxi", 811,811);return false'><img src="/picts/moteur/piviweb/picto_plan.gif" width="22" height="22" alt="Plan de Quartier" /></a><br /></td>
+  
+   	</tr>
+  </table>
+	  <p class="zone">	  
+		
+	
+						
+
+
+
+ 	    			
+	Zone(s) tarifaire(s) du trajet : 1
+		
+ 		  
+ 		  
+			
+	
+		
+	
+</p> 
+     
+        <p class="note">
+          * Les horaires indiqu�s sont susceptibles de variation
+        </p>
+</div> <!-- t_data1-->
+		<!--bloc inferieur-->
+      <div class="outils">
+        <h2>
+          Quartier d'arriv�e
+        </h2>
+        <div class="loupes">
+	    <div><a href="#" onclick='loupe("moins", "http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=ChangementEchelle&Profil=RATP_HOME");return false;'><img src="/picts/moteur/piviweb/picto_loupe_moins.gif" width="16" height="16" alt="" name="moins" /></a></div>
+				<p class="p_loupes"><img src="/picts/moteur/piviweb/spacer.gif" width="1" height="1" alt="" /></p>
+            <p><a href="#" onclick='zoom("0","http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=ChangementEchelle&Profil=RATP_HOME");return false;'><img src="/picts/moteur/piviweb/picto_segment_off.gif" width="31" height="10" alt="" name="zoom0" class="s_off" /></a></p>
+				<p class="p_loupes"><img src="/picts/moteur/piviweb/spacer.gif" width="1" height="1" alt="" /></p>
+            <p><a href="#" onclick='zoom("1","http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=ChangementEchelle&Profil=RATP_HOME");return false;'><img src="/picts/moteur/piviweb/picto_segment_off.gif" width="31" height="10" alt="" name="zoom1" class="s_off" /></a></p>
+				<p class="p_loupes"><img src="/picts/moteur/piviweb/spacer.gif" width="1" height="1" alt="" /></p>
+            <p><a href="#" onclick='zoom("2","http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=ChangementEchelle&Profil=RATP_HOME");return false;'><img src="/picts/moteur/piviweb/picto_segment_on.gif" width="31" height="18" name="zoom2" alt="" /></a></p>
+				<p class="p_loupes"><img src="/picts/moteur/piviweb/spacer.gif" width="1" height="1" alt="" /></p>
+            <p><a href="#" onclick='zoom("3","http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=ChangementEchelle&Profil=RATP_HOME");return false;'><img src="/picts/moteur/piviweb/picto_segment_off.gif" width="31" height="10" alt="" name="zoom3" class="s_off" /></a></p>
+				<p class="p_loupes"><img src="/picts/moteur/piviweb/spacer.gif" width="1" height="1" alt="" /></p>
+            <p><a href="#" onclick='zoom("4","http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=ChangementEchelle&Profil=RATP_HOME");return false;'><img src="/picts/moteur/piviweb/picto_segment_off.gif" width="31" height="10" alt="" name="zoom4" class="s_off" /></a></p>
+				<p class="p_loupes"><img src="/picts/moteur/piviweb/spacer.gif" width="1" height="1" alt="" /></p>
+				<div><a href="#" onclick='loupe("plus", "http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=ChangementEchelle&Profil=RATP_HOME");return false;'><img src="/picts/moteur/piviweb/picto_loupe_plus.gif" width="16" height="16" alt="" name="plus" /></a></div>
+			  <img src="/picts/moteur/piviweb/spacer.gif" width="1" height="1" alt="" class="spacer" />
+        </div>
+			<p class="echelle"><img src="/picts/moteur/piviweb/picto_echelle.gif" width="120" height="20" alt="" name="echelle"/></p>
+        <p class="carre">&nbsp;</p>
+      </div>
+		<!-- Permet affichage bandeau afficher le r�seau ou Masquer le r�seau spacer necessaire pour IE-->
+<img src="/picts/moteur/piviweb/spacer.gif" width="1" height="1" alt="" class="spacer" />		
+<div id="lien_grande_carte_plein">
+		 <a  target="_blank" href="#" onclick='javascript:openCenterUrl("http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=GrandeCarte&Profil=RATP_HOME","GrandeCarte",1086,786);return false;' class="plein">Afficher la carte en mode plein �cran</a>
+		</div>
+<img src="/picts/moteur/piviweb/spacer.gif" width="1" height="1" alt="" class="spacer" />
+		<div id="lien_grande_carte_demi" style="display:none">
+		<a  target="_blank" href="#" onclick='javascript:openCenterUrl("http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=GrandeCarte&Profil=RATP_HOME","GrandeCarte",1086,786);return false;' class="plein_demi_l" >Afficher la carte en mode plein �cran</a>
+		</div>
+		<div id="lien_masquer_reseau" style="display:none"><a  target="_blank" href="#" onclick='masquerReseau("http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=MasquerReseau&Profil=RATP_HOME");return false;' class="plein_demi_r" >Masquer le r�seau</a>	</div>
+		<div id="lien_afficher_reseau" style="display:none"><a  target="_blank" href="#" onclick='afficherReseau("http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=AfficherReseau&Profil=RATP_HOME");return false;' class="plein_demi_r" >Afficher le r�seau</a></div>
+		<!-- Fin de test pour affichage bandeau -->
+		<!--Zone de la carte-->
+		<div class="carte">
+			<table cellpadding="0" cellspacing="0" summary="carte interactive" class="tab_carte" >
+			<tr>
+				
+        <td class="td_top"><a href="#" onclick='navigate("no","http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=Deplacement&Profil=RATP_HOME");return false;'><img src="/picts/moteur/piviweb/bt_left_top.gif" alt="" /></a></td>
+				
+        <td class="bt_center"><a href="#" onclick='navigate("n","http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=Deplacement&Profil=RATP_HOME");return false;'><img src="/picts/moteur/piviweb/bt_top_middle.gif" alt="" /></a></td>
+				
+        <td class="bt_right"><a href="#" onclick='navigate("ne","http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=Deplacement&Profil=RATP_HOME");return false;'><img src="/picts/moteur/piviweb/bt_right_top.gif" alt="" /></a></td>
+			</tr>
+			<tr>
+				
+        <td class="td_top"><a href="#" onclick='navigate("o","http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=Deplacement&Profil=RATP_HOME");return false;'><img src="/picts/moteur/piviweb/bt_left_middle.gif" alt="" /></a></td>
+				<td class="td_carte">
+<!-- CARTE -->
+<form name="carto" method="post" action="">
+<img name="CartoImage" height="393" width="543" alt="Plan d'arriv�e" src="http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=PlanArrivee&Profil=RATP_HOME&d=1274694072" class="img_carte"/>
+</form>
+<!-- FIN CARTE -->
+			<div id="loading">
+						<p>Patientez SVP
+						<img src="/picts/moteur/piviweb/loading.gif" />
+						</p><p>Chargement en cours</p>
+				  </div>
+				</td>
+				
+        <td class="bt_right"><a href="#" onclick='navigate("e","http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=Deplacement&Profil=RATP_HOME");return false;'><img src="/picts/moteur/piviweb/bt_right_middle.gif" alt="" /></a></td>
+			</tr>
+			<tr>
+				
+        <td class="td_top"><a href="#" onclick='navigate("so","http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=Deplacement&Profil=RATP_HOME");return false;'><img src="/picts/moteur/piviweb/bt_left_bottom.gif" alt="" /></a></td>
+				
+        <td class="bt_center_bottom"><a href="#" onclick='navigate("s","http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=Deplacement&Profil=RATP_HOME");return false;'><img src="/picts/moteur/piviweb/bt_bottom_middle.gif"  alt="" /></a></td>
+				
+        <td class="bt_right"><a href="#" onclick='navigate("se","http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=Deplacement&Profil=RATP_HOME");return false;'><img src="/picts/moteur/piviweb/bt_right_bottom.gif" alt="" /></a></td>
+			</tr>
+			</table>
+		</div>
+	
+		<div class="legende">						
+<p><a href="#" onclick='navigate("TC","http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=Deplacement&Profil=RATP_HOME");return false;'><img src=/picts/moteur/reseau/bus_ratp.png alt="Bus RATP"   title="Bus RATP"  /></a>
+<a href="#" onclick='javascript:navigate("TC","http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=Deplacement&Profil=RATP_HOME");return false;'>Centrer la carte sur la station d'arriv�e</a></p>
+	
+	<p><a href="#" onclick='navigate("Adresse","http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=Deplacement&Profil=RATP_HOME");return false;'><img src="/picts/moteur/piviweb/p_centre.png" alt=""/></a>
+<a href="#" onclick='navigate("Adresse","http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=Deplacement&Profil=RATP_HOME");return false;'>Centrer la carte sur l'adresse d'arriv�e</a></p>
+		</div>
+ 		
+	<div class="copy">Copyright � 2007 RATP</div>
+	<div class="cit">Service Client de la RATP : 32 46 (0,34&euro;/min)</div>
+	<div class="entoure">
+		<div class="stif"><script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+
+//-->
+
+</script>
+<a href="#" onClick="MM_openBrWindow('/includes/popup_stif.php','','menubar=no,resizable=no,scrollbars=0,width=440,height=440')"><img src="/picts/v_home_ratp/home_stif/stif.gif" width="418" height="69" border="0" /></a></div>
+	</div>
+</div>
+   <!-- Mega banner - Begin -->
+   <div id="popup_megabanner">
+    <!-- Tag publicitaire - Begin -->
+    
+<!--JavaScript Tag // Tag for network 224: Hi-Media France // Website: FR_SN_Ratp // Page: Resultats // Placement: 728x90_resultats_itineraire (2374502) // created at: Jan 22, 2010 7:06:12 PM-->
+<script language="javascript"><!--
+document.write('<scr'+'ipt language="javascript1.1" src="http://adserver.adtech.de/addyn|3.0|224|2374502|0|225|ADTECH;loc=100;target=_blank;grp=1;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtech.de/adlink|3.0|224|2374502|0|225|ADTECH;loc=300;grp=1" target="_blank"><img src="http://adserver.adtech.de/adserv|3.0|224|2374502|0|225|ADTECH;loc=300;grp=1" border="0" width="728" height="90"></a></noscript>
+<!-- End of JavaScript Tag -->
+
+    <!-- Tag publicitaire - End -->
+   </div>
+  <!-- Mega banner - End -->
+ <script language="JavaScript" type="text/javascript">
+<!--
+
+// N�cessaire � la gestion des cartoTools (echelle, segment, loupe)
+var NiveauEchelle = "3";
+var AfficherReseau = false;
+
+// Mise a jour des outils carto
+updateCartoTools();
+updateLienReseau();
+
+// Mise a jour de la carto
+zoom(NiveauEchelle, "http://www32.ratp.info/Pivi/piviweb.php?exec=piviweb&cmd=ChangementEchelle&Profil=RATP_HOME");
+
+//-->
+</script>
+<script language="JavaScript" type="text/javascript">
+<!--
+self.resizeTo("815","900");
+//-->
+</script>    
+<script language="JavaScript" type="text/javascript">
+<!--
+// Ecriture du Tag Xiti
+writePiviwebXitiTag("RATP_HOME","FeuilleDeRoute","FeuilleDeRoute","ARRET","ok","ARRET","ok","ok");
+//-->
+</script>
+<noscript>
+<img width="1" height="1" src="http://logc5.xiti.com/hit.xiti?s=63390&s2=14&p=PIVI_NoJavascript" >
+</noscript>
+
+</body>
+</html>
+<!-- Page was processed in 0.0491 seconds -->
+<!-- Application r�alis�e pour la RATP par la soci�t� Dryade (www.dryade.net) -->
+
+<!-- Module : piviweb -->
+
+<!-- Action : FeuilleDeRoute -->
+
